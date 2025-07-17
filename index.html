@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YA VINO</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tipografía Anton -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
+    <!-- Tipografía DM SANS -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+</style>
+    
+     <!-- Tipografía Museo Moderno -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/ICON.png" type="image/png">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container fade-in-up">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#home">YA VINO</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">INICIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicio">SERVICIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#beneficios">BENEFICIOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#planes">PLANES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#opiniones">COMUNIDAD</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section id="home" class="hero-bg" style="min-height: 100vh; padding-top: 100px;">
+  <div class="container section-spacing d-flex align-items-center justify-content-between">
+    <div class="row align-items-center">
+      <!-- Imagen destacada: Aparece primero en mobile -->
+      <div class="col-lg-6 text-center order-1 order-lg-2">
+        <img src="images/imagen%20banner.jpg" class="img-fluid img-rounded" alt="Imagen Hero">
+      </div>
+      <!-- Texto principal -->
+        
+      <div class="col-lg-6 order-2 order-lg-1">
+          <!-- Subtítulo -->
+        <p class="subtitulo-hero">CONOCÉ NUESTRO PACKS</p>
+        <h1 class="h1-custom fade-in-up">AMIGOS, MÚSICA Y BUENOS VINITOS.</h1>
+        <p class="p-customizada">Porque no hay nada mejor que un buen vino, compañia y buena música. Con Ya vino, te solucionamos las 2. Vos invitá a tus amigos.</p>
+        <div class="d-flex gap-3 mt-4">
+        <a href="detalle/index.html" class="btn btn-dark">COMPRAR</a>
+         <a href="#nosotros" class="btn btn-outline-dark">CONOCER MÁS</a>
+         </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- /HERO -->
+
+<!-- SECCIÓN G: Beneficios destacados en cards con íconos de Bootstrap -->
+<section id="servicio" class="section-spacing text-center py-5 bg-benefits">
+    <div class="container">
+  <h2 class="mb-5 text-uppercase fw-bold fade-in-up" class="h2-custom">¿CÓMO FUNCIONA?</h2>
+  <div class="row">
+  <!-- Card 1 -->
+  <div class="col-md-4 mb-4" data-aos="fade-up">
+    <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 text-center">
+          <img src="images/primer%20paso.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 135px;">
+        </div>
+        <div class="col-8">
+          <h5 class="mb-2">1. Elegí el plan que más vaya con vos</h5>
+          <p class="p-custom mb-0">Tres planes, para tres experiencias distintas.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 text-center">
+          <img src="images/segundo%20paso.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 135px;">
+        </div>
+        <div class="col-8">
+          <h5 class="mb-2">2. Armamos tu selección de vinos</h5>
+          <p class="p-custom mb-0">Nuestros sommeliers, eligen lo mejor para vos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 text-center">
+          <img src="images/tercer%20paso.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 135px;">
+          </div>
+        <div class="col-8">
+          <h5 class="mb-2">3. Recibí tu box, y prepará la música</h5>
+          <p class="p-custom mb-0">Ya en casita, abris la box y descorchas ese vinito ideal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- ABOUT: Sección sobre nosotros -->
+    <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section id="nosotros" class="section-spacing section-bg-custom">
+  <div class="container">
+    <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="images/nosotros.png" class="img-fluid img-rounded" alt="Imagen Hero">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+        <!-- Subtítulo -->
+        <p class="subtitulo-hero">NOSOTROS</p>
+      <h2 class="display-5 fade-in-up" class="h2-custom">¿Y A USTEDES, QUIÉN LOS CONOCE?</h2>
+      <p class="lead-custom">YA VINO surgé ante la necesidad de tomarse un buen vinito con amigos. Del mood de tomar unas copas, compartiendo buena música ó para acompáñar una comida. Una vez por mes te solucionamos la bebida, y vos te rompes el plan.</p>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-black">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 fade-in-up">
+      <img src="images/uko_bodega.png" alt="Imagen 1" class="img-fluid imagen-chica">
+      <img src="images/thewineplan.png" alt="Imagen 2" class="img-fluid imagen-chica">
+      <img src="images/sthapine.png" alt="Imagen 3" class="img-fluid imagen-chica">
+      <img src="images/lostoneles.png" alt="Imagen 4" class="img-fluid imagen-chica">
+    </div>
+  </div>
+</section>
+    
+<!-- /ABOUT -->
+
+<!-- SERVICES: Servicios o funcionalidades -->
+<section ID="beneficios" class="section-spacing container text-center">
+  <h2 class="h2-custom fade-in-up">¿CUÁLES SON LOS BENEFICIOS?</h2>
+ <p class="p-beneficios mb-5">Accedé a cualquiera de nuestros packs y disfrutá de estos beneficios.</p>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+<div class="card h-100 p-4 bg-transparent border-0 shadow-none">
+<img src="images/polaroid01.png" class="mb-3" alt="Comunidad">
+        <h5>NUESTRA COMUNIDAD</h5>
+        <p class="p-beneficios mb-5">Reviews de nuestras suscripciones y la posibilidad de intercambiar botellas.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+<div class="card h-100 p-4 bg-transparent border-0 shadow-none">
+<img src="images/provincias_2.png" class="mb-3" alt="Comunidad">
+        <h5>CURADURÍA ESPECIALIZADA</h5>
+        <p class="p-beneficios mb-5">Descubrí nuevas bodegas, varietales o regiones. Sin moverte de casa.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+<div class="card h-100 p-4 bg-transparent border-0 shadow-none">
+<img src="images/cupon02.png" class="mb-3" alt="Comunidad">
+        <h5>DESCUENTOS EXCLUSIVOS</h5>
+        <p class="p-beneficios mb-5">Te regalamos con tu suscripción un 10% OFF en bodegas asociadas.</p>
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+</section>
+<!-- /SERVICES -->
+
+    <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section id="planes" class="section-spacing bg-planes text-center">
+  <div class="container">
+<h2 class="mb-5 text-uppercase fw-bold h2-como-funciona fade-in-up">NUESTROS PLANES</h2>
+<p class="p-planes-info">Te explicamos paso a paso cómo funciona nuestro servicio.</p>
+    <div class="row mt-5">
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4 fade-in-up">
+     <div class="card p-4 h-100 card-hover-gradient text-white border-0">
+
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">LA SEGURA<span class="badge bg-primary ms-2">Recomendado</span></h5>
+        <p class="display-6 text-primary">$65.699 <small>/ mes</small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="images/la%20segura_01.png" class="mb-3" alt="Comunidad">
+
+        <!-- Descripción -->
+        <p class="p-custom">Vinos clásicos, confiables, esos que siempre la rompen y que no fallan nunca.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>• 2 Vinos | 1 Tinto y 1 Blanco.</li>
+          <li>• 1 Fichas de Catas</li>
+          <li>• Acceso a video de Sommeliers</li>
+          <li>• Acceso Plan Wine Swap</li>
+          <li>• 1 Envío gratis al mes</li>
+            
+        </ul>
+
+        <!-- Botón CTA -->
+<a href="detalle/index.html" class="btn btn-primary mt-3">¡VAMOS CON ESA!</a>
+        </div>
+    </div>
+
+    <!-- Card: Plan Pro (Recomendado) -->
+     <div class="col-md-4 mb-4 fade-in-up">
+<div class="card p-4 h-100 card-hover-gradient text-white border-0">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">JUGARRETA </h5>
+        <p class="display-6 text-primary">$85.000 <small>/ mes</small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="images/JUGARRETA_01.png" class="mb-3" alt="Comunidad">
+
+        <!-- Descripción -->
+        <p class="p-custom">Vinos ideales, fuera de lo común y perfectos para hacerte el que sabes de vino.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>• Box LA SEGURA</li>
+          <li>• + 1 Vino espumante</li>
+          <li>• Fichas sensoriales y QR a video</li>
+          <li>• 10%OFF en vinotecas asociadas</li>
+          <li>• 1 Envío gratis al mes</li>
+        </ul>
+
+        <!-- Botón CTA -->
+<a href="detalle/index.html" class="btn btn-primary mt-3">¡VAMOS CON ESA!</a>      </div>
+    </div>
+
+    <!-- Card: Plan Full -->
+     <div class="col-md-4 mb-4 fade-in-up">
+<div class="card p-4 h-100 card-hover-gradient text-white border-0">
+    <!-- Título y precio -->
+        <h5 class="text-uppercase">PIPÍ CUCU</h5>
+        <p class="display-6 text-primary">$110.000 <small>/ mes</small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="images/PIPICUCU_01.png" class="mb-3" alt="Comunidad">
+
+        <!-- Descripción -->
+        <p class="p-custom">Cuando el paladar nos exige un poco más. Ideal para tomar con un jazz de fondo.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>• Contenido Box La Segura</li>
+          <li>• Contenido Box Jugarreta</li>
+          <li>• Vinilo de Regalo + Biografía artista del Mes</li>
+          <li>• 1 Envío gratis al Mes</li>
+        </ul>
+
+        <!-- Botón CTA -->
+<a href="detalle/index.html" class="btn btn-primary mt-3">¡VAMOS CON ESA!</a>      </div>
+    </div>
+</div>
+</section>
+    
+<!-- SECCIÓN A: Texto centrado sin imagen -->
+<section id="comunidad" class="section-spacing text-center bg-dark-section">
+    <div class="container fade-in-up">
+  <h2 class="display-hero">PARA CADA PLAN, UNA PERSONA. PARA CADA PERSONA, UNA EXPERIENCIA.</h2>
+  <p class="lead-custom text-dark-custom">Conocé a nuestra comunidad, y como les resúlto.</p>
+  <div class="mt-4 d-flex justify-content-center gap-3"></div>
+</section>
+    
+   <section class="section-spacing container py-5">
+  
+  <div class="masonry__container">
+    <img class="masonry__item" src="images/vinoypizza.jpg" alt="Imagen 1">
+    <img class="masonry__item" src="images/amigasvino.jpg" alt="Imagen 2">
+    <img class="masonry__item" src="images/amigosventana.jpg" alt="Imagen 3">
+    <img class="masonry__item" src="images/juntadavinoamigos.jpg" alt="Imagen 4">
+    <img class="masonry__item" src="images/amigosbarra.jpg" alt="Imagen 5">
+    <img class="masonry__item" src="images/situacionvinilovino.jpg" alt="Imagen 6">
+    <img class="masonry__item" src="images/amigasventana.jpg" alt="Imagen 7">
+    <img class="masonry__item" src="images/chicayvinocopa.jpg" alt="Imagen 8">
+    <img class="masonry__item" src="images/fresedibujada.png" alt="Imagen 9">
+    <img class="masonry__item" src="images/cuadrosvinoamigas.png" alt="Imagen 6">
+    <img class="masonry__item" src="images/amigasjuegos.png" alt="Imagen 4">
+
+  </div>
+</section>
+<section id="opiniones" class="section-spacing bg-testimonials text-center">
+  <div class="container">
+<h2 class="h2-custom fade-in-up" style="color: black;">COMUNIDAD</h2>
+    <div class="row">
+      <!-- Testimonio 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card p-4">
+          <img src="images/CHICO.png" alt="Cliente 1" class="testimonial-img mb-3">
+          <div class="stars-container mb-3">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <blockquote class="blockquote mb-0">
+            <footer class="blockquote-footer mt-3 text-white-50">Leandro</footer>
+            “La sube una locura este pack, me dejo sorprendido el nivel de calidad, y variedad en vinos que manejan.”
+            <footer class="blockquote-footer mt-3 text-white-50">Suscripción a Pipí Cucu</footer>
+          </blockquote>
+        </div>
+      </div>
+      <!-- Testimonio 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card p-4">
+          <img src="images/foto%20perfil_chica.png" alt="Cliente 2" class="testimonial-img mb-3">
+          <div class="stars-container mb-3">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <blockquote class="blockquote mb-0">
+            <footer class="blockquote-footer mt-3 text-white-50">Mariana</footer>
+            “La verdad todo de 10 !! Llegó a tiempo como especificaron, y todo en perfecto estado. La que viene voy por el otro pack!”
+            <footer class="blockquote-footer mt-3 text-white-50">Suscripción a Jugarreta</footer>
+          </blockquote>
+        </div>
+      </div>
+      <!-- Testimonio 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card p-4">
+          <img src="images/OTRACHICA.png" alt="Cliente 3" class="testimonial-img mb-3">
+          <div class="stars-container mb-3">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <blockquote class="blockquote mb-0">
+            <footer class="blockquote-footer mt-3 text-white-50">Lucy</footer>
+            “Todo estuvo impecable, no me imagine que iba a ser así! Gracias x ser tan dedicados!!”
+            <footer class="blockquote-footer mt-3 text-white-50">Suscripción a LA SEGURA</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas" class="section-spacing container text-center accordion-custom">
+  <h2 class="h2-custom text-black fade-in-up">PREGUNTAS FRECUENTES</h2>
+  <p class="p-custom text-center mx-auto">Te ayudamos a decidirte</p>
+  <div class="row mt-5 g-4 accordion accordion-custom" id="faqAccordion">
+    
+    <!-- Pregunta 1 -->
+    <div class="col-md-6">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+            ¿Puedo elegir los vinos que me van a llegar?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Cada mes seleccionamos vinos únicos, pero podés personalizar tus preferencias en tu perfil.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div class="col-md-6">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            ¿Cómo hago para regalar una suscripción?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Podés seleccionar “Regalar” al momento de elegir tu plan y dejar un mensaje especial.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="col-md-6">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            ¿Cuánto tarda en llegar a mi domicilio?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Entre 3 a 7 días hábiles dependiendo de tu zona.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="col-md-6">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            ¿Qué pasa con mi envío si no estoy en mi domicilio?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Se reprograma la entrega o podés coordinar un nuevo punto.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 5 -->
+    <div class="col-md-6">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            ¿Puedo pausar o cancelar la suscripción?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sí, podés hacerlo en cualquier momento desde tu cuenta.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 6 -->
+    <div class="col-md-6">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            ¿Hacen envíos al interior del país?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sí, realizamos envíos a todo el país.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT FORM: Formulario de contacto -->
+<section id="contacto" class="section-contact-outer">
+  <div class="section-spacing container text-center section-contact fade-in-up">
+    <h2 class="h2-custom">FORMULARIO DE CONTACTO</h2>
+<p class="p-custom texto-blanco">Envía un mensaje directamente desde la web.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Tu nombre">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Tu email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-contact w-100">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- NEWSLETTER -->
+<section class="section-newsletter-outer newsletter-bg">
+  <div class="container section-newsletter text-center">
+    <h2 class="h2-custom fade-in-up">SUSCRIBITE AL NEWSLETTER</h2>
+    <p class="p-custom">Recibí novedades, lanzamientos y recomendaciones directo en tu mail.</p>
+
+    <form class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-6 px-0">
+        <div class="input-group w-100">
+          <input type="email" class="form-control newsletter-input" placeholder="Tu email" required>
+          <button class="btn btn-contact-newsletter" type="submit">Suscribirme</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-bg text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Navegación -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">NAVEGACIÓN</h6>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#servicio" class="footer-link">Servicio</a></li>
+          <li><a href="#planes" class="footer-link">Planes</a></li>
+          <li><a href="#comunidad" class="footer-link">Comunidad</a></li>
+          <li><a href="#faq" class="footer-link">Preguntas Frecuentes</a></li>
+          <li><a href="#contacto" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicio -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">SERVICIO</h6>
+        <ul class="list-unstyled">
+          <li><a href="#planes" class="footer-link">Planes</a></li>
+          <li><a href="#pago" class="footer-link">Formas de Pago</a></li>
+          <li><a href="#envio" class="footer-link">Envío</a></li>
+          <li><a href="#suscripcion" class="footer-link">Suscripción Mensual</a></li>
+        </ul>
+      </div>
+
+      <!-- Comunidad -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">UNIRTE A LA COMUNIDAD</h6>
+        <ul class="list-unstyled">
+          <li><a href="#opiniones" class="footer-link">Opiniones</a></li>
+          <li><a href="#galeria" class="footer-link">Galería</a></li>
+          <li><a href="#musico" class="footer-link">Músico del mes</a></li>
+          <li><a href="#newsletter" class="footer-link">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">CONTACTO</h6>
+        <ul class="list-unstyled">
+          <li><a href="mailto:info@yavino.com" class="footer-link">Mail</a></li>
+          <li><a href="tel:+541112345678" class="footer-link">Teléfono</a></li>
+          <li><span class="footer-link">Dirección</span></li>
+        </ul>
+        <div class="mt-4">
+          <img src="images/YA%20VINO_LOGO.png" alt="YA VINO Logo" style="width: 120px;">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Línea final -->
+    <div class="text-center text-muted small pt-4 mt-4 border-top border-secondary">
+      <p class="mb-0">Copyright YA VINO – 2025. Todos los derechos reservados.
+        Defensa de las y los consumidores. 
+        Para reclamos <a href="#" class="footer-link text-muted text-decoration-underline">ingresá acá</a> / 
+        <a href="#" class="footer-link text-muted text-decoration-underline">Botón de arrepentimiento</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.fade-in-up');
+
+    const showOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.9;
+
+      elements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          el.classList.add('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll(); // ejecutar en el primer load también
+  });
+</script>
+
+</body>
+</html>
