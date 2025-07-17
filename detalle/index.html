@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YA VINO</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tipografía Anton -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
+    <!-- Tipografía DM SANS -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+</style>
+     <!-- Tipografía Museo Moderno -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/ICON.png" type="image/png">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior para detalle -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container fade-in-up">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="../index.html#home">YA VINO</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html#home">INICIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#servicio">SERVICIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#beneficios">BENEFICIOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#planes">PLANES</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#opiniones">COMUNIDAD</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#contacto">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="hero-bg" style="min-height: 80vh; padding-top: 100px;">
+  <div class="container section-spacing d-flex align-items-center justify-content-between">
+    <div class="row align-items-center">
+
+      <!-- Imagen destacada -->
+      <div class="col-lg-6 text-center order-1 order-lg-2 mb-4 mb-lg-0 fade-in-up">
+        <img src="images/nuestrosplanes.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      </div>
+
+      <!-- Texto principal -->
+      <div class="col-lg-6 order-2 order-lg-1 fade-in-up">
+
+        <!-- Subtítulo -->
+        <p class="subtitulo-hero">SUSCRIPCIÓN MENSUAL</p>
+
+        <!-- Título y precio -->
+        <div class="d-flex align-items-baseline flex-wrap gap-3">
+          <h1 class="h1-custom m-0">LA SEGURA</h1>
+          <p class="precio-hero m-0">$65.699 ARG/s <span class="precio-xmes">x Mes</span></p>
+        </div>
+
+        <!-- Lista -->
+        <ul class="text-white mt-4">
+          <li><strong>•</strong> Incluye 2 vinos (1 Tinto y 1 Blanco) ó (2 Tintos)</li>
+          <li><strong>•</strong> 1 Fichas de Catas</li>
+          <li><strong>•</strong> Acceso a video de Sommeliers</li>
+          <li><strong>•</strong> Acceso Plan Wine Swap + 1 Envío Gratis al mes</li>
+          <li><strong>•</strong> Envío Mensual</li>
+        </ul>
+
+        <!-- Botones (NO se tocan) -->
+        <div class="d-flex gap-3 mt-4">
+          <a href="#" class="btn btn-dark">COMPRAR</a>
+          <a href="#" class="btn btn-outline-dark">VER OTROS PACKS</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- /HERO -->
+    
+<!-- SECCIÓN G: Beneficios destacados en cards con íconos de Bootstrap -->
+<section class="section-spacing text-center py-5 bg-benefits">
+  <div class="container">
+  <h2 class="mb-5 text-uppercase fw-bold fade-in-up" class="h2-custom">¿QUÉ TRAE DENTRO LA BOX?</h2>
+    <p class="descripcion-hero mb-5">No ofrecemos solo una caja. Estamos en el detalle, te ofrecemos una experiencia.</p>
+
+  <div class="row">
+  <!-- Card 1 -->
+  <div class="col-md-4 mb-4" data-aos="fade-up">
+    <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 text-center">
+          <img src="images/vinos.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 135px;">
+        </div>
+        <div class="col-8">
+          <h5 class="mb-2">VINOS</h5>
+          <p class="p-custom mb-0">Incluye hasta 3 vinos que pueden ser 2 tintos y 1 blanco ó 2 iguales.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 text-center">
+          <img src="images/fichamaridaje.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 135px;">
+        </div>
+        <div class="col-8">
+          <h5 class="mb-2">FICHA DE CATAS</h5>
+          <p class="p-custom mb-0">Registro completo y técnico de la experiencia de degustación de un vino.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+      <div class="row g-0 align-items-center">
+        <div class="col-4 text-center">
+          <img src="images/FICHAcattat.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 120px;">
+          </div>
+        <div class="col-8">
+          <h5 class="mb-2">FICHAS SENSORIALES</h5>
+          <p class="p-custom mb-0">Resumen visual de sus cualidades, gustos y maridaje del vino.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Card 4 -->
+<div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+  <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+    <div class="row g-0 align-items-center">
+      <div class="col-4 text-center">
+        <img src="images/CELULAR.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 135px;">
+      </div>
+      <div class="col-8">
+        <h5 class="mb-2">VIDEO SOMMELIERS</h5>
+        <p class="p-custom mb-0">Video donde nuestros expertos, te cuentan que podes esperar del vino.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+  <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+    <div class="row g-0 align-items-center">
+      <div class="col-4 text-center">
+        <img src="images/CUPONSITO.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 125px;">
+      </div>
+      <div class="col-8">
+        <h5 class="mb-2">CUPÓN DE DESCUENTO</h5>
+        <p class="p-custom mb-0">Cupón de regalo con un 10% OFF en nuestras bodegas asociadas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+  <div class="card h-100 p-4 shadow-sm" style="background-color: black; color: white;">
+    <div class="row g-0 align-items-center">
+      <div class="col-4 text-center">
+        <img src="images/WINESWAP.png" alt="Icono del plan" class="img-fluid" style="max-height: 135px; max-width: 135px;">
+      </div>
+      <div class="col-8">
+        <h5 class="mb-2">PLAN WINE SWAP</h5>
+        <p class="p-custom mb-0">Cambio por botellas repetidas con otros clientes.</p>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+</section>
+    <section class="py-5 bg-black text-white">
+  <div class="container text-center">
+    <!-- Título de la sección -->
+    <h2 class="mb-3 fade-in-up">MEDIOS DE PAGO</h2>
+    <p class="mb-5 fade-in-up">Elegí la forma que más te convenga para pagar tu pedido.</p>
+
+    <!-- Imágenes con títulos y texto -->
+    <div class="row justify-content-center fade-in-up">
+      <div class="col-12 col-md-4 mb-4">
+        <img src="images/TARJETAS.png" alt="Tarjetas" class="img-fluid imagen-chica mb-3">
+        <h5>TARJETAS</h5>
+        <p class="p-beneficio">Aceptamos todas las tarjetas de débito y crédito como forma de pago.</p>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <img src="images/EFECTIVO.png" alt="Efectivo" class="img-fluid imagen-chica mb-3">
+        <h5>EFECTIVO</h5>
+        <p class="p-beneficio">Pagá en efectivo al momento de la entrega o retiro.</p>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <img src="images/BILLETERA.png" alt="Billeteras Virtuales" class="img-fluid imagen-chica mb-3">
+        <h5>BILLETERA VIRTUAL</h5>
+        <p class="p-beneficio">Aceptamos billeteras virtuales y transferencias bancarias.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+  <!-- /SERVICES -->
+    <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section class="section-spacing bg-packplanes">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Columna de imagen -->
+      <div class="col-lg-6 text-center mb-4 mb-lg-0 fade-in-up">
+        <img src="images/plan%20swipe.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      </div>
+      <!-- Columna de texto -->
+      <div class="col-lg-6">
+        <h2 class="display-5 h2-custom fade-in-up">PLAN WINE SWAP</h2>
+        <p class="lead-customizada">
+          Jugó cambiasso! Wine Swap surge con la necesidad de poder intercambiar botellas duplicadas con otros socios. Suscribiendote, incluye un envío gratis al mes.
+        </p>
+        <a href="#otrosplanes" class="btn btn-dark">COMPRAR</a>
+<a href="../index.html" class="btn btn-outline-dark">SABER MÁS</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- opiniones -->
+<section class="section-spacing bg-testimonials text-center">
+  <div class="container">
+       <h2 class="mb-5 text-uppercase fw-bold fade-in-up" class="h2-custom">COMUNIDAD</h2>
+    <p class="descripcion-hero mb-5 descripcion-testimonios">Ellos ya probaron La Segura, y te cuentan como les fue.</p>
+    <div class="row">
+      <!-- Testimonio 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card p-4">
+          <img src="images/carlitos.jpg" alt="Cliente 1" class="testimonial-img mb-3">
+            <div class="stars-container mb-3">
+    <!-- Aquí van las estrellas -->
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+  </div>
+          <blockquote class="blockquote mb-0">
+              <footer class="blockquote-footer mt-3 text-white-50">Carlos</footer>
+            “El nombre del pack no puede ir mejor, no fallo, ni un poco. ¡Ya estoy manija con la caja del mes que viene! ”
+            <footer class="blockquote-footer mt-3 text-white-50">Suscripción a LA SEGURA</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Testimonio 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card p-4">
+          <img src="images/camila.jpg" alt="Cliente 1" class="testimonial-img mb-3">
+            <div class="stars-container mb-3">
+    <!-- Aquí van las estrellas -->
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+  </div>
+          <blockquote class="blockquote mb-0">
+              <footer class="blockquote-footer mt-3 text-white-50">Camila</footer>
+            “La verdad que alta caja, no me esperaba semejante calidad. Y el packgaging MUUYYYY BUENO. Los felicito!! ”
+            <footer class="blockquote-footer mt-3 text-white-50">Suscripción a LA SEGURA</footer>
+          </blockquote>
+        </div>
+      </div>
+      <!-- Testimonio 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card p-4">
+          <img src="images/hernan.jpg" alt="Cliente 1" class="testimonial-img mb-3">
+            <div class="stars-container mb-3">
+    <!-- Aquí van las estrellas -->
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+  </div>
+          <blockquote class="blockquote mb-0">
+              <footer class="blockquote-footer mt-3 text-white-50">Hernan</footer>
+            “Vinos de VERDAD!, excelente. Desde el pack, hasta el tiempo de envío y la experiencia con lasfichas sensoriales”
+            <footer class="blockquote-footer mt-3 text-white-50">Suscripción a LA SEGURA</footer>
+          </blockquote>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+<!-- /ABOUT -->    
+<!-- SECCIÓN A: Texto centrado sin imagen -->
+<section class="section-spacing text-center bg-dark-section">
+  <div class="container fade-in-up">
+  <h2 class="display-hero">SE NOTA QUE SOS PIPÍ CUCU, POR ESO TENEMOS ALGO ESPECIAL PARA VOS.</h2>
+  <p class="lead-custom text-dark-custom">Incluído con el pack Pipí Cucu</p>
+  <div class="mt-4 d-flex justify-content-center gap-3"></div>
+</section>
+<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+<section class="section-spacing seccion-degradada">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Columna de imagen -->
+      <div class="col-lg-6 text-center order-1 order-lg-2 mt-4 mt-lg-0">
+        <img src="images/sade.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      </div>
+
+      <!-- Columna de texto -->
+      <div class="col-lg-6 order-2 order-lg-1">
+          <p class="subtitulo-hero">BENEFICIO EXCLUSIVO</p>
+        <h2 class="display-5 h2-custom text-white">ARTISTA DEL MES Y UN VINILO DE REGALO CON TU SUSCRIPCIÓN</h2>
+        <p class="lead-custom text-white">Todos los meses seleccionamos un Artista nuevo, y enviamos un Vinilo de regalo. Porque para tomar un buen vino, tiene que ir acompañado de buena música.</p>
+        <a href="#" class="btn btn-dark">SABER MÁS</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+     <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section id="otrosplanes" class="section-spacing bg-planes text-center">
+  <div class="container">
+<h2 class="mb-5 text-uppercase fw-bold fade-in-up h2-custom text-white">OTROS PLANES</h2>
+
+<div class="row mt-5 justify-content-center">
+    <!-- Card: Plan Pro (Recomendado) -->
+     <div class="col-md-4 mb-4">
+<div class="card p-4 h-100 card-hover-gradient text-white border-0">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">JUGARRETA</h5>
+        <p class="display-6 text-primary">$85.000 <small>/ mes</small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="images/JUGARRETA_01.png" class="mb-3" alt="Comunidad">
+
+        <!-- Descripción -->
+        <p class="p-custom">Vinos ideales, fuera de lo común y perfectos para hacerte el que sabes de vino.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>• Box LA SEGURA</li>
+          <li>• + 1 Vino espumante</li>
+          <li>• Fichas sensoriales y QR a video</li>
+          <li>• 10%OFF en vinotecas asociadas</li>
+          <li>• 1 Envío gratis al mes</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">¡VAMOS CON ESA!</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Full -->
+     <div class="col-md-4 mb-4">
+<div class="card p-4 h-100 card-hover-gradient text-white border-0">
+    <!-- Título y precio -->
+        <h5 class="text-uppercase">PIPÍ CUCU<span class="badge bg-primary ms-2">Recomendado</span></h5>
+        <p class="display-6 text-primary">$110.000 <small>/ mes</small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="images/PIPICUCU_01.png" class="mb-3" alt="Comunidad">
+
+        <!-- Descripción -->
+        <p class="p-custom">Cuando el paladar nos exige un poco más. Ideal para tomar con un jazz de fondo.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>• Contenido Box La Segura</li>
+          <li>• Contenido Box Jugarreta</li>
+          <li>• Vinilo de Regalo + Biografía artista del Mes</li>
+          <li>• 1 Envío gratis al Mes</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">¡VAMOS CON ESA!</a>
+      </div>
+    </div>
+</div>
+</section>
+<section class="py-5 bg-black">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 fade-in-up">
+      <img src="images/uko_bodega.png" alt="Imagen 1" class="img-fluid imagen-chica">
+      <img src="images/thewineplan.png" alt="Imagen 2" class="img-fluid imagen-chica">
+      <img src="images/sthapine.png" alt="Imagen 3" class="img-fluid imagen-chica">
+      <img src="images/lostoneles.png" alt="Imagen 4" class="img-fluid imagen-chica">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section class="section-contact-outer">
+  <div class="section-spacing container text-center section-contact">
+    <h2 class="h2-custom fade-in-up">FORMULARIO DE CONTACTO</h2>
+    <p class="p-custom">Envía un mensaje directamente desde la web.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Tu nombre">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Tu email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-contact w-100">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- NEWSLETTER -->
+<section class="section-newsletter-outer newsletter-bg">
+  <div class="container section-newsletter text-center">
+    <h2 class="h2-custom">SUSCRIBITE AL NEWSLETTER</h2>
+    <p class="p-custom">Recibí novedades, lanzamientos y recomendaciones directo en tu mail.</p>
+    <form class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          <input type="email" class="form-control newsletter-input" placeholder="Tu email" required>
+          <button class="btn btn-contact-newsletter" type="submit">Suscribirme</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer-bg text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Navegación -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">NAVEGACIÓN</h6>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#servicio" class="footer-link">Servicio</a></li>
+          <li><a href="#planes" class="footer-link">Planes</a></li>
+          <li><a href="#comunidad" class="footer-link">Comunidad</a></li>
+          <li><a href="#faq" class="footer-link">Preguntas Frecuentes</a></li>
+          <li><a href="#contacto" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicio -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">SERVICIO</h6>
+        <ul class="list-unstyled">
+          <li><a href="#planes" class="footer-link">Planes</a></li>
+          <li><a href="#pago" class="footer-link">Formas de Pago</a></li>
+          <li><a href="#envio" class="footer-link">Envío</a></li>
+          <li><a href="#suscripcion" class="footer-link">Suscripción Mensual</a></li>
+        </ul>
+      </div>
+
+      <!-- Comunidad -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">UNIRTE A LA COMUNIDAD</h6>
+        <ul class="list-unstyled">
+          <li><a href="#opiniones" class="footer-link">Opiniones</a></li>
+          <li><a href="#galeria" class="footer-link">Galería</a></li>
+          <li><a href="#musico" class="footer-link">Músico del mes</a></li>
+          <li><a href="#newsletter" class="footer-link">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">CONTACTO</h6>
+        <ul class="list-unstyled">
+          <li><a href="mailto:info@yavino.com" class="footer-link">Mail</a></li>
+          <li><a href="tel:+541112345678" class="footer-link">Teléfono</a></li>
+          <li><span class="footer-link">Dirección</span></li>
+        </ul>
+        <div class="mt-4">
+          <img src="images/YA%20VINO_LOGO.png" alt="YA VINO Logo" style="width: 120px;">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Línea final -->
+    <div class="text-center text-muted small pt-4 mt-4 border-top border-secondary">
+      <p class="mb-0">Copyright YA VINO – 2025. Todos los derechos reservados.
+        Defensa de las y los consumidores. 
+        Para reclamos <a href="#" class="footer-link text-muted text-decoration-underline">ingresá acá</a> / 
+        <a href="#" class="footer-link text-muted text-decoration-underline">Botón de arrepentimiento</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.fade-in-up');
+
+    const showOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.9;
+
+      elements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          el.classList.add('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll(); // ejecutar en el primer load también
+  });
+</script>
+
+</body>
+</html>
